@@ -1,0 +1,15 @@
+{
+  "name": "kolibri-demo-theme",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "export THEME_MODULE=\"`pwd`/src/index\" && export THEME_EXPORT=DEMO && cd node_modules/@public-ui/sample-react/ && pnpm start"
+  },
+  "devDependencies": {
+    "@public-ui/sample-react": "^2.0.3",
+    "cross-env": "^7.0.3"
+  },
+  "dependencies": {
+    "@public-ui/schema": "^2.0.3"
+  }
+}
