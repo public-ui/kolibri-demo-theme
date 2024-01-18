@@ -1,7 +1,8 @@
 {
   "name": "kolibri-demo-theme",
   "version": "1.0.0",
-  "license": "UNLICENSED",
+  "license": "EUPL-1.2",
+  "private": true,
   "scripts": {
     "serve": "export THEME_MODULE=\"`pwd`/src/index\" && export THEME_EXPORT=DEMO && cd node_modules/@public-ui/sample-react/ && pnpm start"
   },
