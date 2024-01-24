@@ -1,1 +1,4 @@
+/.husky/
+/dist/
 /node_modules/
+/test-results/
