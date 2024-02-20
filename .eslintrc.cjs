@@ -1,4 +1,5 @@
 module.exports = {
+	extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
 		project: 'tsconfig.json',
@@ -6,5 +7,10 @@ module.exports = {
 		tsconfigRootDir: __dirname,
 	},
 	plugins: ['@typescript-eslint'],
-	extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
+	rules: {
+		/**
+		 * Import types with `import type` instead of `import`.
+		 */
+		'@typescript-eslint/consistent-type-imports': 'warn',
+	},
 };
