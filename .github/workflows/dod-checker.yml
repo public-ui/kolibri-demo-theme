@@ -3,7 +3,6 @@ on:
   pull_request:
     types: [opened, edited]
 
-
 concurrency:
   group: ci-{{ github.head_ref || github.ref }}
   cancel-in-progress: true
@@ -13,7 +12,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Clone Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Check DoD
         uses: platisd/definition-of-done@master
         with:
