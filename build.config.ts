@@ -1,6 +1,6 @@
-import { defineBuildConfig } from 'unbuild';
-import { Plugin } from 'rollup';
+import type { Plugin } from 'rollup';
 import postcss from 'rollup-plugin-postcss';
+import { defineBuildConfig } from 'unbuild';
 
 export default defineBuildConfig({
 	entries: ['src/index'],
@@ -12,7 +12,7 @@ export default defineBuildConfig({
 		inlineDependencies: true,
 	},
 	hooks: {
-		'rollup:options'(_ctx, options) {
+		'rollup:options'(_buildContext, options) {
 			options.plugins = (options.plugins ?? []) as Plugin[];
 			options.plugins = options.plugins.filter((plugin) => (plugin as Plugin).name !== 'unbuild-raw');
 			options.plugins.push(
