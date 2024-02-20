@@ -1,12 +1,10 @@
 {
 	"compilerOptions": {
 		"declaration": true,
-		"module": "ESNext",
-		"moduleResolution": "node",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
 		"outDir": "dist",
-		"preserveSymlinks": true,
 		"removeComments": true,
-		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true,
 		"target": "ESNext",
