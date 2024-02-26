@@ -28,7 +28,7 @@
 	"devDependencies": {
 		"@commitlint/cli": "18.6.1",
 		"@commitlint/config-conventional": "18.6.2",
-		"@public-ui/sample-react": "2.0.6",
+		"@public-ui/sample-react": "2.0.7",
 		"@public-ui/visual-tests": "2.0.6",
 		"@types/node": "ts5.3",
 		"@typescript-eslint/eslint-plugin": "7.0.2",
